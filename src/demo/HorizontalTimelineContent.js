@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
-import HorizontalTimeline from '../../src/Components/HorizontalTimeline';
+import HorizontalTimeline from '../Component/HorizontalTimeline';
 import HorizontalTimelineConfigurator from './HorizontalTimelineConfigurator';
 
 

@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import HorizontalTimelineContent from './HorizontalTimelineContent';
-import GameInfo from '../resources/content';
+import GameInfo from './resources/content';
 
-require('file?name=[name].[ext]!./index.html');
+// require('file?name=[name].[ext]!./index.html');
 
 // Directly importing the minified bootstrap css to avoid all the painful
 // steps it will take otherwise to get it to work.
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -41,4 +42,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('content'));
+ReactDOM.render(<App />, document.getElementById('root'));
